@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Code Marker</title>
+</head>
+<body>
+
+    <header class="outerDivs">
+        <h1>COMENTADOR DE CÓDIGO</h1>
+        <h2>Ferramenta desenvolvida para auxiliar meus estudos em React</h2>
+        <h2>Basta passar o mouse em cima do código para ver que função ele cumpre.</h2>
+
+    </header>
+
+    <main class="outerDivs">
+        <section class="innerDivs" id="react">
+            <h3>>> Curso de React do <a href="https://fullstackopen.com/en/part1/introduction_to_react" target="_blank">Full Stack Learning</a></h3>
+        
+            <h4>Iniciando</h4>
+
+            <div class="codePanel">
+                <div class="panelTitle">
+                    <h5>main.jsx</h5>
+                </div>
+                <div class="panelContent">
+                <pre><code>
+                    <span>import ReactDOM from 'react-dom/client'</span>
+
+                    <span>import App from './App'</span>
+
+                    <span>ReactDOM.createRoot(document.getElementById('root')).</span><span>render((&lt;App /&gt;))</span>
+                </code></pre>
+                </div>
+            </div>
+
+            <div class="codePanel">
+                <div class="panelTitle">
+                    <h5>App.jsx</h5>
+                </div>
+                <div class="panelContent">
+                <pre><code>
+
+                    <span>const App = </span><span>() =&gt; {</span>
+                        <span>return</span> (
+                            <span>
+                                    &lt;div&gt;
+                                        &lt;p&gt;Hello world&lt;/p&gt;
+                                    &lt;/div&gt;
+                            </span>
+                        )
+                      }
+                      
+                      <span>export default App</span>
+
+                </code></pre>
+                </div>
+            </div>
+
+            <h5>Deletar App.css e index.css</h5>
+
+            <div class="codePanel">
+                <div class="panelTitle">
+                    <h5>App.jsx</h5>
+                </div>
+                <div class="panelContent">
+                <pre><code>
+                    <span>
+                    const App = () =&gt; {
+                        const now = new Date()
+                        const a = 10
+                        const b = 20
+                        console.log(now, a+b)
+                    </span>  
+                        return (
+                          &lt;div&gt;
+                            &lt;p&gt;Hello world, it is {now.toString()}&lt;/p&gt;
+                            &lt;p&gt;
+                              {a} plus {b} is {a + b}
+                            &lt;/p&gt;
+                          &lt;/div&gt;
+                        )
+                      }
+
+                </code></pre>
+                </div>
+            </div>
+        </section>
+        
+
+
+    </main>
+
+    
+</body>
+<script src="index.js"></script>
+</html>
